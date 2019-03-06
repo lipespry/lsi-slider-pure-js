@@ -1,0 +1,52 @@
+/*
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-//
+//. ___.....LSI...........________.......______..................__..__.......//
+//./\  \................./\  _____\...../ _____\......LSI......./\ \ \ \......//
+//.\ \_ \.......__  _____\ \ \____/..../\ \____/ ______  __  ___\ \ \_\ \..LSI//
+//..\//\ \...../\_\/\  __ \ \ \_____...\ \ \____/\  __ \/\ \/ ___\ \____ \....//
+//....\ \ \....\/\ \ \ \/ /\ \  ____\...\ \____ \ \ \/ /\ \  /___/\/____\ \...//
+//.....\ \ \..._\ \ \ \  /..\ \ \___/....\/____\ \ \  /..\ \ \.........\ \ \..//
+//.LSI..\_\ \__\ \ \ \ \ \...\ \ \______....____\ \ \ \...\ \ \.......__\_\ \.//
+//....../\________\ \_\ \_\...\ \_______\../\_____/\ \_\...\ \ \...../\_____/.//
+//......\/________/\/_/\/_/....\/_______/..\/____/..\/_/....\/_/.....\/____/..//
+//¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-//
+//    LSI          Felipe Moraes - felipemdeoliveira@live.com          LSI    //
+//¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-//
+
+* EDITE ESTE ARQUIVO CONFORME SUA NECESSIDADE
+* É O LIMITE RECOMENDÁVEL PARA NÃO DESCARACTERIZAR O SLIDER
+*******************************************************************************/
+
+/* TAMANHO DOS SLIDES (PRINCIPAL/CONTAINER) */
+div.lsi-slides {
+    width: 100%;
+    height: 100vh;
+}
+
+/* CONTEÚDO DOS SLIDES */
+/* DEMONSTRAÇÃO - REMOVA/EDITE SE NECESSÁRIO*/
+div.lsi-slides > article {
+    display: flex;
+    align-items: center;
+}
+div.lsi-slides > article > div {
+    width: 100%;
+    text-align: center;
+}
+div.lsi-slides > article > div > h2 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 4em;
+}
+div.lsi-slides > article > div > p {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* EXTRA */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

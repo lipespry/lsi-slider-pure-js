@@ -1,0 +1,85 @@
+/*
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-//
+//. ___.....LSI...........________.......______..................__..__.......//
+//./\  \................./\  _____\...../ _____\......LSI......./\ \ \ \......//
+//.\ \_ \.......__  _____\ \ \____/..../\ \____/ ______  __  ___\ \ \_\ \..LSI//
+//..\//\ \...../\_\/\  __ \ \ \_____...\ \ \____/\  __ \/\ \/ ___\ \____ \....//
+//....\ \ \....\/\ \ \ \/ /\ \  ____\...\ \____ \ \ \/ /\ \  /___/\/____\ \...//
+//.....\ \ \..._\ \ \ \  /..\ \ \___/....\/____\ \ \  /..\ \ \.........\ \ \..//
+//.LSI..\_\ \__\ \ \ \ \ \...\ \ \______....____\ \ \ \...\ \ \.......__\_\ \.//
+//....../\________\ \_\ \_\...\ \_______\../\_____/\ \_\...\ \ \...../\_____/.//
+//......\/________/\/_/\/_/....\/_______/..\/____/..\/_/....\/_/.....\/____/..//
+//¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-//
+//    LSI          Felipe Moraes - felipemdeoliveira@live.com          LSI    //
+//¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-¯-//
+
+* NÃO É RECOMENDÁVEL ALTERAR ESTE ARQUIVO
+* EDITE O ARQUIVO: estilo-usuario.css AO INVÉS DESTE
+*
+* SÓ ALTERE ALGO AQUI SE REALMENTE FOR NECESSÁRIO
+*******************************************************************************/
+
+/* PRINCIPAL (CONTAINER) */
+div.lsi-slides {
+    position: relative;
+    cursor: default;
+    background-color: black;
+}
+/* SLIDES */
+div.lsi-slides > article {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10%;
+    overflow: auto;
+    box-sizing: border-box;
+    background-image: url('bg_padrao.jpg');
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+div.lsi-slides > article:not(.lsi-slide-ativo) {
+    opacity: 0;
+}
+/* BOTÕES ANTERIOR E PRÓXIMO */
+div.lsi-slides > button.slideBtn {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 10%;
+    min-width: 32px;
+    max-width: 64px;
+    overflow: hidden;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: 0;
+    margin: 10px;
+    background-color: unset;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.2;
+    cursor: pointer;
+    display: none;
+}
+div.lsi-slides > button.slideBtn.ant {
+    left: 0;
+}
+div.lsi-slides > button.slideBtn.prox {
+    right: 0;
+}
+div.lsi-slides > button.slideBtn:active {
+    color: silver;
+}
+div.lsi-slides > button.slideBtn:focus {
+    outline: 0;
+}
+div.lsi-slides:hover > button.slideBtn {
+    opacity: 1;
+}
+div.lsi-slides > button.slideBtn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
